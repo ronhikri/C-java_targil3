@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.net.URL?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ProgressBar?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+
+<BorderPane id="Manage" fx:id="SceneApp" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="631.0" prefWidth="879.0" xmlns="http://javafx.com/javafx/8.0.201" xmlns:fx="http://javafx.com/fxml/1" fx:controller="stageApplication.StageApp">
+   <top>
+      <HBox alignment="TOP_CENTER" prefHeight="100.0" prefWidth="200.0" spacing="20.0" BorderPane.alignment="CENTER">
+         <children>
+            <Label prefHeight="17.0" prefWidth="82.0" text="PrograssBar" />
+            <ProgressBar fx:id="ProgressBar" prefWidth="200.0" progress="0.0" />
+            <Button id="ClickLoadXmlFile" fx:id="ClickLoadFromXmlFile" mnemonicParsing="false" onAction="#ClickLoadXmlFile" prefHeight="65.0" prefWidth="138.0" stylesheets="@stagei-css" text="ClickLoadFromFile">
+               <padding>
+                  <Insets bottom="6.0" left="6.0" right="6.0" top="6.0" />
+               </padding>
+            </Button>
+            <ComboBox fx:id="selectColorScene" onAction="#ClickSelectColorScene" prefHeight="25.0" prefWidth="139.0" promptText="SelectSceneColor" />
+         </children>
+      </HBox>
+   </top>
+   <right>
+      <TextArea id="TextException" fx:id="TextExceptions" prefHeight="62.0" prefWidth="153.0" text="textState" BorderPane.alignment="CENTER" />
+   </right>
+   <left>
+      <VBox prefHeight="531.0" prefWidth="202.0" spacing="30.0" BorderPane.alignment="CENTER">
+         <children>
+            <Button id="ShoCust" fx:id="ListOfCostumers" mnemonicParsing="false" onAction="#ClickShowCustomers" stylesheets="@stagei-css" text="ShowCustomers" />
+            <Button id="ShowI" fx:id="ListItems" mnemonicParsing="false" onAction="#ClickShowItems" styleClass="header-button" stylesheets="@stagei-css" text="ShowItems" />
+            <Button id="ShowS" fx:id="ListStores" mnemonicParsing="false" onAction="#ClickShowStores" stylesheets="@stagei-css" text="ShowStores" />
+            <Button id="UpdateI" fx:id="ClickUpdateItems" mnemonicParsing="false" onAction="#ClickUpdateItemsAndStores" stylesheets="@stagei-css" text="UpdateItemsAndStores" />
+            <Button id="MakeOrd" fx:id="ClickMakeOrder" mnemonicParsing="false" onAction="#ClickMakeOrders" stylesheets="@stagei-css" text="MakeOrders" />
+            <Button id="MapSandC" fx:id="MapOfSystem" mnemonicParsing="false" onAction="#ClickMapSystemSuperMarket" stylesheets="@stagei-css" text="MapStoresAndCustomers" />
+            <Button id="HistoryOrd" fx:id="Historyorders" mnemonicParsing="false" onAction="#showHistoryOrders" prefHeight="25.0" prefWidth="152.0" stylesheets="@stagei-css" text="HistoryOrders" />
+            <Button id="AddS" fx:id="AddStore" mnemonicParsing="false" onAction="#ClickAddStore" prefHeight="25.0" prefWidth="186.0" stylesheets="@stagei-css" text="AddStoresSystem" />
+            <Button id="AddIS" fx:id="addItemToSys" mnemonicParsing="false" onAction="#ClickAddItemToSys" prefHeight="25.0" prefWidth="167.0" stylesheets="@stagei-css" text="AddItemToSystem" />
+            <Button id="AddD" fx:id="selectAddDiscount" mnemonicParsing="false" onAction="#ClickSelectAddDiscount" prefHeight="25.0" prefWidth="171.0" stylesheets="@stagei-css" text="AddDiscountToSys" />
+         </children>
+      </VBox>
+   </left>
+   <stylesheets>
+
+                                          <URL value="@stagei-css" />
+   </stylesheets>
+   <center>
+      <VBox prefHeight="200.0" prefWidth="100.0" spacing="30.0">
+         <children>
+            <ComboBox fx:id="selectcolorCust" onAction="#ClickSelectCustColor" prefWidth="150.0" promptText="SelectColor" />
+            <ComboBox fx:id="SelectColorItems" onAction="#ClickSelectColorItem" prefWidth="150.0" promptText="SelectColor" />
+            <ComboBox fx:id="SelectColorStores" onAction="#ClickSelectColorStores" prefWidth="150.0" promptText="SelectColor" />
+            <ComboBox fx:id="SelectColorItemsAndStores" onAction="#ClickSElectItAndStoresColor" prefWidth="150.0" promptText="SelectColor" />
+            <ComboBox fx:id="SelectColorOrder" onAction="#ClickSelectColorOrder" prefWidth="150.0" promptText="SelectColor" />
+            <ComboBox fx:id="SelectColorMap" onAction="#ClickSelectColorMap" prefWidth="150.0" promptText="SellectColor" />
+            <ComboBox fx:id="SelectColorHistorOrder" onAction="#ClickSelectColorHistoryOrd" prefWidth="150.0" promptText="SelectColor" />
+            <ComboBox fx:id="SelectColorAddStore" onAction="#ClickSelectColorAddStore" prefWidth="150.0" promptText="SelectColor" />
+            <ComboBox fx:id="SelectAddItemColor" onAction="#ClickSelectAddItemColor" prefWidth="150.0" promptText="SelectColor" />
+            <ComboBox fx:id="SelectAddDiscountColor" onAction="#ClickSelectDiscColor" prefWidth="150.0" promptText="SelectColor" />
+         </children>
+      </VBox>
+   </center>
+</BorderPane>

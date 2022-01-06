@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+
+
+<BorderPane xmlns="http://javafx.com/javafx/8.0.201" xmlns:fx="http://javafx.com/fxml/1" fx:controller="itemsApplication.controllerItemsShow">
+   <center>
+      <ScrollPane fitToHeight="true" fitToWidth="true">
+         <content>
+            <BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="549.0" prefWidth="679.0">
+               <center>
+                  <AnchorPane prefHeight="200.0" prefWidth="200.0" BorderPane.alignment="CENTER">
+                     <children>
+                        <TableView fx:id="TableItems" layoutX="7.0" prefHeight="436.0" prefWidth="666.0">
+                          <columns>
+                            <TableColumn fx:id="id" prefWidth="95.0" text="id" />
+                            <TableColumn fx:id="name" text="name" />
+                              <TableColumn fx:id="wayToBuyItem" prefWidth="73.0" text="waytobuy" />
+                              <TableColumn fx:id="numberstoresthatsolditem" prefWidth="113.0" text="numberstores" />
+                              <TableColumn fx:id="PriceItemAvg" prefWidth="130.0" text="priceavgitem" />
+                              <TableColumn fx:id="CountSoldInSystem" prefWidth="147.0" text="countSoldInSystm" />
+                          </columns>
+                        </TableView>
+                     </children>
+                  </AnchorPane>
+               </center>
+            </BorderPane>
+         </content>
+      </ScrollPane>
+   </center>
+</BorderPane>

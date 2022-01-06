@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="437.0" prefWidth="646.0" xmlns="http://javafx.com/javafx/8.0.201" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ListOrdersStores.ControllerOrdersStores">
+   <children>
+      <ComboBox fx:id="storss" layoutX="46.0" layoutY="46.0" onAction="#ClickSelectStore" prefWidth="150.0" promptText="ListStores" />
+      <ScrollPane layoutX="37.0" layoutY="107.0" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" minHeight="200.0" minWidth="200.0" prefHeight="260.0" prefWidth="580.0">
+         <content>
+            <TableView fx:id="ListOrders" prefHeight="264.0" prefWidth="584.0">
+              <columns>
+                <TableColumn fx:id="id" prefWidth="75.0" text="idOrder" />
+                <TableColumn fx:id="date" prefWidth="75.0" text="Date" />
+                  <TableColumn fx:id="countitems" prefWidth="105.0" text="CountItems" />
+                  <TableColumn fx:id="sumprice" prefWidth="95.0" text="SumPriceItems" />
+                  <TableColumn fx:id="costSend" prefWidth="133.0" text="costSending" />
+                  <TableColumn fx:id="costorder" prefWidth="100.0" text="costOrder" />
+              </columns>
+            </TableView>
+         </content>
+      </ScrollPane>
+   </children>
+</AnchorPane>

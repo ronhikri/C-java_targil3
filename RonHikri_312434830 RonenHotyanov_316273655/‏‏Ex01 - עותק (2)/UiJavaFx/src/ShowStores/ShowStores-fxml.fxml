@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+
+<VBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="542.0" prefWidth="679.0" xmlns="http://javafx.com/javafx/8.0.201" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ShowStores.ControllerShowStores">
+   <children>
+      <AnchorPane prefHeight="551.0" prefWidth="679.0">
+         <children>
+            <Button fx:id="itesmsStore" layoutX="244.0" layoutY="89.0" mnemonicParsing="false" onAction="#ClickItemsStore" prefHeight="61.0" prefWidth="148.0" text="ListItemsOfStore" />
+            <Button fx:id="DiscountsStore" layoutX="250.0" layoutY="189.0" mnemonicParsing="false" onAction="#ClickDiscountsInStore" prefHeight="61.0" prefWidth="148.0" text="ListDiscountsStore" />
+            <Button fx:id="StaticOrdersInStore" layoutX="250.0" layoutY="298.0" mnemonicParsing="false" onAction="#ClickStaticOrdersInStore" prefHeight="61.0" prefWidth="148.0" text="ListStaticOrdersInStore" />
+            <Button fx:id="DinamyOrdersInStore" layoutX="258.0" layoutY="405.0" mnemonicParsing="false" onAction="#ClickDinamyOrdersInStore" prefHeight="77.0" prefWidth="148.0" text="ListDinamyOrdersInStore" />
+            <Button fx:id="showData" layoutX="246.0" layoutY="33.0" mnemonicParsing="false" onAction="#clickDataStores" prefHeight="25.0" prefWidth="136.0" text="ShowDataStores" />
+         </children>
+      </AnchorPane>
+   </children>
+</VBox>

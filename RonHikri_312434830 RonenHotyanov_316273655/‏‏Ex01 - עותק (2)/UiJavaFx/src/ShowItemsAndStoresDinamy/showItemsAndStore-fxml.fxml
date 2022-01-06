@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane xmlns="http://javafx.com/javafx/8.0.201" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ShowItemsAndStoresDinamy.ControllerShowAndStoresDinamy">
+   <children>
+      <ScrollPane fitToHeight="true" fitToWidth="true" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" minHeight="300.0" minWidth="300.0" prefHeight="560.0" prefWidth="700.0">
+         <content>
+            <AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="524.0" prefWidth="762.0">
+               <children>
+                  <ComboBox fx:id="SelectItem" layoutX="35.0" layoutY="37.0" onAction="#ClickSelectItem" prefHeight="25.0" prefWidth="127.0" promptText="ListIItems" />
+                  <TableView fx:id="TableStores" layoutX="22.0" layoutY="139.0" prefHeight="357.0" prefWidth="706.0">
+                    <columns>
+                      <TableColumn fx:id="IdOfStore" prefWidth="75.0" text="idOfStore" />
+                      <TableColumn fx:id="NameOfStore" prefWidth="75.0" text="nameStore" />
+                        <TableColumn fx:id="cordinatax" prefWidth="75.0" text="CordinataX" />
+                        <TableColumn fx:id="cordinatay" prefWidth="75.0" text="CordinataY" />
+                        <TableColumn fx:id="distance" prefWidth="75.0" text="Distance" />
+                        <TableColumn fx:id="PPK" prefWidth="75.0" text="ppk" />
+                        <TableColumn fx:id="costsending" prefWidth="75.0" text="CostSending" />
+                        <TableColumn fx:id="sumkindsitems" prefWidth="93.0" text="SumKindsItem" />
+                        <TableColumn fx:id="sumprices" prefWidth="75.0" text="SumPrices" />
+                    </columns>
+                  </TableView>
+                  <Label layoutX="359.0" layoutY="54.0" prefHeight="17.0" prefWidth="79.0" text="selectAmount" />
+                  <TextField fx:id="selectprice" layoutX="448.0" layoutY="50.0" prefHeight="25.0" prefWidth="108.0" />
+                  <Button fx:id="SelectContinue" layoutX="617.0" layoutY="37.0" mnemonicParsing="false" onAction="#ClickContinue" prefHeight="25.0" prefWidth="117.0" text="Continue" />
+                  <Button fx:id="Addtoorder" layoutX="617.0" layoutY="98.0" mnemonicParsing="false" onAction="#ClickAddToOrder" prefHeight="25.0" prefWidth="108.0" text="AddToOrder" />
+                  <TextField fx:id="Exceptions" layoutX="189.0" layoutY="63.0" text="Exceptions" />
+                  <TextField fx:id="TheStore" layoutX="431.0" layoutY="99.0" prefHeight="25.0" prefWidth="84.0" />
+                  <Label layoutX="357.0" layoutY="102.0" prefHeight="17.0" prefWidth="63.0" text="nameStore" />
+                  <Label layoutX="78.0" layoutY="116.0" prefHeight="17.0" prefWidth="168.0" text="namesStores Minumus sells" />
+               </children>
+            </AnchorPane>
+         </content>
+      </ScrollPane>
+   </children>
+</AnchorPane>

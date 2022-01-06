@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script src="../common/context-path-helper.js"></script>
+    <script type="text/javascript" src="../common/jquery-2.0.3.min.js"></script>
+    <script type="text/javascript" src="../StoreManagerWeb/tiallOpen.js"></script>
+    <script type="text/javascript" src="../StoreManagerWeb/clickEnterDataStore.js"></script>
+    <script type="text/javascript" src="../StoreManagerWeb/ShowItemsToSelectStore.js"></script>
+    <script type="text/javascript" src="../StoreManagerWeb/UpdateNewStore.js"></script>
+    <script type="text/javascript" src="../StoreManagerWeb/FinishToAddStore.js"></script>
+    <script type="text/javascript" src="../StoreManagerWeb/ShowNotificationInAddStore.js"></script>
+    <script type="text/javascript" language="javascript">
+    </script>
+</head>
+<body>
+<h3>Open New Stores</h3>
+<br>
+<button id="selectDataToStore" class="btn">Select data to store</button>
+<button id="ShowItemsInSystem" class="btn">Show Items In System</button>
+<button id="Aditem" class="btn">Add Item To Store</button>
+<button id="finished" class="btn">finish to create store</button>
+<br>
+<br>
+<label>Enter Id Store:</label>
+<input type="text" placeholder="0" id="IdStore">
+<br>
+<label>name New Store:</label>
+<input type="text" placeholder="" id="namenewstore">
+<br>
+<label>Enter CordinataX:</label>
+<input type="text" placeholder="0" id="CordinataXStore">
+<br>
+<label>Enter CordinataY:</label>
+<input type="text" placeholder="0" id="CordinataYStore">
+<br>
+<label>Enter PPK:</label>
+<input type="text" placeholder="0" id="ppkstore">
+<br>
+<br>
+<select id="itemsSystem" name="ItemsToSelectToStore" required>
+    <option>
+    </option>
+</select><br>
+<label>Enter priceitem:</label>
+<input type="text" placeholder="0" id="itemPrice">
+<br>
+<br>
+<br>
+<ol class="ListForWatchFeedbackOfRide">
+    <textarea readonly id="TextWatchNewsnewStore" name="TextWatchNews" placeholder="There are currently not any notifications" rows="7" cols="50"></textarea>
+</ol>
+<form method="GET"action="ClickbackoptionsManeger">
+    <button>Submit</button>
+</form>
+</body>
+</html>

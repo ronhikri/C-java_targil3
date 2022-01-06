@@ -1,0 +1,8 @@
+<component name="ArtifactManager">
+  <artifact type="war" name="SuperDuperMarket:war">
+    <output-path>$PROJECT_DIR$/out/artifacts/SuperDuperMarket_war</output-path>
+    <root id="archive" name="SuperDuperMarket_war.war">
+      <element id="artifact" artifact-name="SuperDuperMarket:war exploded" />
+    </root>
+  </artifact>
+</component>

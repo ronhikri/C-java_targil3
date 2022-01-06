@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+
+
+<BorderPane xmlns="http://javafx.com/javafx/8.0.201" xmlns:fx="http://javafx.com/fxml/1" fx:controller="CustomerApplication.CostomerController">
+   <center>
+      <ScrollPane fitToHeight="true" fitToWidth="true">
+         <content>
+            <BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="525.0" prefWidth="713.0">
+               <center>
+                  <AnchorPane prefHeight="200.0" prefWidth="200.0" BorderPane.alignment="CENTER">
+                     <children>
+                        <TableView fx:id="TableCustomers" layoutX="51.0" layoutY="74.0" prefHeight="380.0" prefWidth="628.0">
+                          <columns>
+                            <TableColumn fx:id="IdCostomer" prefWidth="102.0" text="idOfCostumer" />
+                            <TableColumn fx:id="nameCostomer" prefWidth="48.0" text="name" />
+                              <TableColumn fx:id="CordinataXCostomer" prefWidth="75.0" text="CordinataX" />
+                              <TableColumn fx:id="CordinataYCostomer" prefWidth="75.0" text="CordinataY" />
+                              <TableColumn fx:id="SumOrdersCostomer" prefWidth="86.0" text="SumOrders" />
+                              <TableColumn fx:id="avgPriceOrderCostomer" prefWidth="114.0" text="avgPriceOrders" />
+                              <TableColumn fx:id="avgPrceSendngCostomer" prefWidth="118.0" text="avgPriceSending" />
+                          </columns>
+                        </TableView>
+                     </children>
+                  </AnchorPane>
+               </center>
+            </BorderPane>
+         </content>
+      </ScrollPane>
+   </center>
+</BorderPane>

@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script src="../common/context-path-helper.js"></script>
+    <script type="text/javascript" src="../common/jquery-2.0.3.min.js"></script>
+    <script type="text/javascript" src="../StoreManagerWeb/BringZonesToAddItem.js"></script>
+    <script type="text/javascript" src="../StoreManagerWeb/initiallOpenItem.js"></script>
+    <script type="text/javascript" src="../StoreManagerWeb/ClickEnterDataItem.js"></script>
+    <script type="text/javascript" src="../StoreManagerWeb/ShowStoresToAddItem.js"></script>
+    <script type="text/javascript" src="../StoreManagerWeb/updateNewItem.js"></script>
+    <script type="text/javascript" src="../StoreManagerWeb/ShowNotificationInNewItem.js"></script>
+
+
+
+    <script type="text/javascript" language="javascript">
+    </script>
+</head>
+<body>
+<h3>Open New Item</h3>
+<br>
+<button id="selectZone" class="btn">select one Your Zone</button>
+<button id="selectDataToItem" class="btn">Select data to item</button>
+<button id="ShowStoresInSystem" class="btn">Show Stores In System</button>
+<button id="AdStores" class="btn">Add Store To Item</button>
+<button id="finishedCreateItem" class="btn">finish to create Item</button>
+<br>
+<br>
+<label>Enter name Item:</label>
+<input type="text" placeholder="" id="nameItemToSpace">
+<br>
+<br>
+<input id="radioQuantity" type="radio"  name="QuantityOrWeightToItem" value="Quantity">
+<label id="QuanItem" for="radioQuantity">Select Quantity</label>
+<input id="radioWeight" type="radio"  name="QuantityOrWeightToItem" value="Weight">
+<label id="labelArrival" for="radioWeight">Select Weight</label>
+<br>
+<br>
+<select id="YourZones"name="selectZones">
+    <option>
+    </option>
+</select><br>
+<br>
+<select id="StoresSystem" name="SelectStoresToItem" required>
+    <option>
+    </option>
+</select><br>
+<br>
+<label>Enter priceitem To Add:</label>
+<input type="text" placeholder="0" id="priceToAddNewItem">
+<br>
+<br>
+<br>
+<ol class="ListForWatchFeedbackOfRide">
+    <textarea readonly id="TextWatchNewsnewItem" name="TextWatchNews" placeholder="There are currently not any notifications" rows="7" cols="50"></textarea>
+</ol>
+<form method="GET"action="ClickbackoptionsManeger">
+    <button>Submit</button>
+</form>
+</body>
+</html>

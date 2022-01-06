@@ -1,0 +1,36 @@
+var USER_LIST_URLlAddDisc = buildUrlWithContextPath("AddWayDiscServet");
+$(function() {
+    $("#addDisc").click(function () {
+        var nameOfOfferselectd = $("#name_offers").val();
+        var selectedOpp = $("#name_opperation").val();
+        $.ajax({
+            method: 'POST',
+            data: {"offer":nameOfOfferselectd,"SelectOpperator":selectedOpp},
+            url: USER_LIST_URLlAddDisc,
+            dataType: 'json',
+            timeout: 5000,
+            error: function (e) {
+                document.getElementById("ShowDiscounts")["disabled"]=false;
+                document.getElementById("adddiscount")["disabled"]=true;
+                document.getElementById("Showoffers")["disabled"]=true;
+                document.getElementById("addDisc")["disabled"]=true;
+                document.getElementById("finishDiscount")["disabled"]=false;
+
+                //ajContent..
+                console.log("Failed to get ajax response");
+            },
+            success: function (res) {
+                document.getElementById("ShowDiscounts")["disabled"]=false;
+                document.getElementById("adddiscount")["disabled"]=true;
+                document.getElementById("Showoffers")["disabled"]=true;
+                document.getElementById("addDisc")["disabled"]=true;
+                document.getElementById("finishDiscount")["disabled"]=false;
+
+
+            }
+
+        })
+
+
+    })
+});

@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>The Options:</title>
+
+    <script src="../../common/context-path-helper.js"></script>
+    <script type="text/javascript" src="../../common/jquery-2.0.3.min.js"></script>
+    <script type="text/javascript" src="../../pages/CustomerOptions/ChargeMoney.js"></script>
+    <script type="text/javascript" src="../../pages/CustomerOptions/FinancialMoneyActivation.js"></script>
+    <script type="text/javascript" src="../../pages/CustomerOptions/ShowUsersMoney.js"></script>
+    <script type="text/javascript" language="javascript">
+    </script>
+</head>
+<body>
+
+<h2>The options:</h2>
+<ul>
+    <li><a href="MakeStaticOrder.html">Make Order</a></li>
+    <li><a href="ShowDataOfOrder.html">Show History Order</a></li>
+
+</ul>
+    <h4>I want to charge money for my account:</h4>
+        <input type="text" name="chargeMoneyForAccount" placeholder="Enter the amount" id="chargeAmount">
+<button id="ChargeMoneyForm" class="bth"/>Charge Money</button>
+<br>
+<br>
+<label for="dateChargeMoney">Select Date:</label>
+<input type="date" id="dateChargeMoney" name="chargeDate">
+    <h5 id="errorMessage"></h5>
+
+
+<h2 id="allActivationsLabel">All activations on this account:</h2>
+<ol class="ListOfActivations">
+    <table id="financialTable">
+        <colgroup>
+            <col span="1" class="cols bigCols" style="background-color: silver" style="font-style: italic" width="16%">
+            <col span="1" class="cols bigCols" style="background-color: silver" style="font-style: italic" width="15%">
+            <col span="1" class="cols bigCols" style="background-color: silver" style="font-style: italic" width="23%">
+            <col span="1" class="cols bigCols" style="background-color: silver" style="font-style: italic" width="23%">
+            <col span="1" class="cols bigCols" style="background-color: silver" style="font-style: italic" width="23%">
+
+        </colgroup> <!-- columns of the table -->
+        <tr>
+            <th> Type of activation </th>
+            <th> Date </th>
+            <th> Total amount of this activation </th>
+            <th> Total amount before activation </th>
+            <th> Total amount after activation  </th>
+        </tr>
+        <!--    <tr class = "rowOnActivationTable" style="background-color:wheat">
+            </tr>-->
+    </table>
+    <form method="GET"action="http://localhost:8080/SuperDuperMarket_war/CustomerOptions/ClickbackToZoneForCustomers">
+        <button>Back</button>
+    </form>
+
+</ol>
+</body>
+</html>

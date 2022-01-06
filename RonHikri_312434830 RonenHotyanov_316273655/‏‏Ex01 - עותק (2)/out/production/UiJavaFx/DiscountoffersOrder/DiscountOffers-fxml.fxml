@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane xmlns="http://javafx.com/javafx/8.0.201" xmlns:fx="http://javafx.com/fxml/1" fx:controller="DiscountoffersOrder.ControllerDiscount">
+   <children>
+      <ScrollPane maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" minHeight="-Infinity" minWidth="-Infinity" prefHeight="475.0" prefWidth="670.0">
+        <content>
+          <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="470.0" prefWidth="698.0">
+               <children>
+                  <ComboBox fx:id="Discounts" layoutX="-8.0" layoutY="26.0" onAction="#ClickSelectdiscount" prefHeight="25.0" prefWidth="321.0" promptText="ShowDiscounts" />
+                  <ComboBox fx:id="Offers" layoutX="407.0" layoutY="93.0" onAction="#ClickOffer" prefHeight="25.0" prefWidth="251.0" promptText="ShowOffers" />
+                  <ComboBox fx:id="Opperator" layoutY="118.0" onAction="#ClickOpperator" prefWidth="150.0" promptText="selectOpperator" />
+                  <TextField fx:id="Exceptions" layoutX="400.0" layoutY="26.0" />
+                  <TableView fx:id="TableOffers" layoutX="179.0" layoutY="166.0" prefHeight="266.0" prefWidth="405.0">
+                    <columns>
+                      <TableColumn fx:id="iditemoffer" prefWidth="75.0" text="IdItemOffer" />
+                      <TableColumn fx:id="nameitemoffer" prefWidth="121.0" text="nameOfItemoffer" />
+                        <TableColumn fx:id="quantity" prefWidth="105.0" text="Quantity" />
+                        <TableColumn fx:id="priceunit" prefWidth="103.0" text="PriceUnitItem" />
+                    </columns>
+                  </TableView>
+                  <Button fx:id="Continue" layoutX="560.0" layoutY="39.0" mnemonicParsing="false" onAction="#ClickContinue" prefHeight="25.0" prefWidth="103.0" text="continue" />
+                  <Button fx:id="MakeDiscount" layoutX="594.0" layoutY="166.0" mnemonicParsing="false" onAction="#ClickMakeDiscount" prefHeight="25.0" prefWidth="91.0" text="AddDiscountorder" />
+               </children>
+            </AnchorPane>
+        </content>
+      </ScrollPane>
+   </children>
+</AnchorPane>

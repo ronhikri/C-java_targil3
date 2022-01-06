@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="616.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/8.0.201" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ListDiscountInShows.ControllerShowDiscountStore">
+   <top>
+      <AnchorPane prefHeight="200.0" prefWidth="200.0" BorderPane.alignment="CENTER">
+         <children>
+            <ComboBox fx:id="ListStores" layoutX="22.0" layoutY="114.0" onAction="#ClickSelectStore" prefHeight="129.0" prefWidth="214.0" promptText="ListOfStores" />
+            <ComboBox fx:id="WhatShouldBuyDiscount" layoutX="28.0" layoutY="321.0" onAction="#ClickShouldBuyDiscount" prefHeight="182.0" prefWidth="203.0" promptText="ListWhatShouldBuyInDiscount" />
+            <TextField layoutX="217.0" layoutY="44.0" prefHeight="25.0" prefWidth="280.0" text="select first store before whatShouldBuyDiscount" />
+            <ScrollPane layoutX="266.0" layoutY="77.0">
+               <content>
+                  <ListView fx:id="ListOffers" prefHeight="422.0" prefWidth="508.0" />
+               </content>
+            </ScrollPane>
+         </children>
+      </AnchorPane>
+   </top>
+   <center>
+      <AnchorPane prefHeight="200.0" prefWidth="200.0" BorderPane.alignment="CENTER" />
+   </center>
+</BorderPane>

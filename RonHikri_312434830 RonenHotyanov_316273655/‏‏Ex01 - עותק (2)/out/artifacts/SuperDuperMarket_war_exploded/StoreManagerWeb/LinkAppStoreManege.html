@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script src="../common/context-path-helper.js"></script>
+    <script type="text/javascript" src="../common/jquery-2.0.3.min.js"></script>
+    <script type="text/javascript" src="../StoreManagerWeb/ShowActivitiesOfStoreManege.js"></script>
+    <script type="text/javascript" src="../StoreManagerWeb/chargeMoneyOfStoreManager.js"></script>
+    <script type="text/javascript" src="../StoreManagerWeb/ShowUserMoneyStoreManage.js"></script>
+    <script type="text/javascript" src="../StoreManagerWeb/ShowNotification.js"></script>
+    <script type="text/javascript" language="javascript">
+    </script>
+
+</head>
+<body>
+<h2>The options:</h2>
+<ul>
+    <li><a href="ShowOrdersInStore.html">Show Orders In Stores</a></li>
+    <li><a href="OpenNewStore.html">Add Store To Zone</a></li>
+    <li><a href="OpenNewItem.html">Add Item To Zone</a></li>
+    <li><a href="FeedBackToStoreManeger.html">Show FeedBack From Customer </a></li>
+
+</ul>
+<h4>I want to charge money for my account:</h4>
+<input type="text" name="chargeMoneyForAccount" placeholder="Enter the amount" id="chargeAmount">
+<button id="ChargeMoneyForm" class="bth"/>ChargeMoneyPlease</button>
+<br>
+<br>
+<label for="dateChargeMoney">Select Date To Charge Money:</label>
+<input type="date" id="dateChargeMoney" name="chargeDate">
+<h5 id="errorMessage"></h5>
+    <h2 id="allActivationsLabel">All activations on this account:</h2>
+    <ol class="ListOfActivations">
+        <table id="financialTable">
+            <colgroup>
+                <col span="1" class="cols bigCols" style="background-color: silver" style="font-style: italic" width="16%">
+                <col span="1" class="cols bigCols" style="background-color: silver" style="font-style: italic" width="15%">
+                <col span="1" class="cols bigCols" style="background-color: silver" style="font-style: italic" width="23%">
+                <col span="1" class="cols bigCols" style="background-color: silver" style="font-style: italic" width="23%">
+                <col span="1" class="cols bigCols" style="background-color: silver" style="font-style: italic" width="23%">
+
+            </colgroup> <!-- columns of the table -->
+            <tr>
+                <th> Type of activation </th>
+                <th> Date </th>
+                <th> Total amount of this activation </th>
+                <th> Total amount before activation </th>
+                <th> Total amount after activation  </th>
+            </tr>
+            <!--    <tr class = "rowOnActivationTable" style="background-color:wheat">
+                </tr>-->
+        </table>
+
+    </ol>
+    <br>
+    <br>
+    <ol class="ListForWatchFeedbackOfRide">
+        <textarea readonly id="TextWatchNews" name="TextWatchNews" placeholder="There are currently not any notifications" rows="7" cols="50"></textarea>
+    </ol>
+    <form method="GET"action="ClickbackToZone">
+        <button>back</button>
+    </form>
+</ul>
+</body>
+</html>

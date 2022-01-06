@@ -1,0 +1,11 @@
+<component name="ArtifactManager">
+  <artifact type="jar" name="UiJavaFx:jar">
+    <output-path>$PROJECT_DIR$/out/artifacts/UiJavaFx_jar</output-path>
+    <root id="archive" name="UiJavaFx.jar">
+      <element id="module-output" name="UiJavaFx" />
+      <element id="dir-copy" path="$PROJECT_DIR$/UiJavaFx/src" />
+      <element id="file-copy" path="$PROJECT_DIR$/UiJavaFx/src/stageApplication/Stage-fxml.fxml" />
+      <element id="module-output" name="Engine" />
+    </root>
+  </artifact>
+</component>

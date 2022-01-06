@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="473.0" prefWidth="685.0" xmlns="http://javafx.com/javafx/8.0.201" xmlns:fx="http://javafx.com/fxml/1" fx:controller="AddItemsToOffer.ControllerAddOffer">
+   <children>
+      <ComboBox fx:id="selectItems" layoutX="14.0" layoutY="66.0" onAction="#ClickSelectOffers" prefHeight="25.0" prefWidth="220.0" promptText="SelectItemsToOffers" />
+      <Label layoutX="22.0" layoutY="151.0" prefHeight="17.0" prefWidth="123.0" text="selectAmountToOffer" />
+      <TextField fx:id="AmountToOffer" layoutX="177.0" layoutY="147.0" onAction="#ClickAmountItemToOffer" />
+      <TextField fx:id="PriceItemToOffer" layoutX="177.0" layoutY="244.0" onAction="#AclickPriceItemToOffer" />
+      <Label layoutX="37.0" layoutY="248.0" prefHeight="17.0" prefWidth="123.0" text="selectPriceToItem" />
+      <TextArea fx:id="excep" layoutX="374.0" layoutY="126.0" prefHeight="104.0" prefWidth="149.0" />
+      <Button fx:id="addItemToOffer" layoutX="405.0" layoutY="35.0" mnemonicParsing="false" onAction="#ClickAddItemToOffer" prefHeight="25.0" prefWidth="107.0" text="AddItemToOffer" />
+   </children>
+</AnchorPane>

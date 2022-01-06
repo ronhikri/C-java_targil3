@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script src="../common/context-path-helper.js"></script>
+    <script type="text/javascript" src="../common/jquery-2.0.3.min.js"></script>
+    <script type="text/javascript" src="../StoreManagerWeb/BringStoresOfSpace.js"></script>
+    <script type="text/javascript" src="../StoreManagerWeb/OrdersOfStoreSelected.js"></script>
+    <script type="text/javascript" src="../StoreManagerWeb/orderSelectBringItems.js"></script>
+    <script type="text/javascript" src="../StoreManagerWeb/ShowNotificationInShowOrders.js"></script>
+    <script type="text/javascript" language="javascript">
+    </script>
+</head>
+<body>
+<h3>Shows Orders In Stores</h3>
+<br>
+<button id="selectStoreClick" class="btn">showOrdersInStore</button>
+<button id="seletOrderInStoreClick" class="btn">showItemsorder</button>
+<select id="StoresSelecting" name="storesselect">
+    <option>
+    </option>
+</select><br>
+<br>
+<select id="OrdersSelecting" name="ordersselect">
+    <option>
+    </option>
+</select><br>
+<br>
+<h3>ShowOrders in store that selected</h3>
+<br>
+<table id="DataOfOrder">
+    <colgroup>
+        <col span="9" class="cols" style="font-style: italic" width="7%" height="5px" border="5">
+    </colgroup> <!-- columns of the table -->
+    <tr>
+        <th> <h5>CountInOrder</h5></th>
+        <th> <h5>DateOfOrder</h5> </th>
+        <th><h5>NameOfCustomer</h5></th>
+        <th> <h5>SpaceXoFcustomer</h5> </th>
+        <th> <h5>SpaceYOfCustomer</h5></th>
+        <th> <h5>CountItemsThatInOrder</h5></th>
+        <th> <h5>SumPriceItems</h5></th>
+        <th> <h5>SendOfOrder</h5></th>
+        <th><h5>CostOrder</h5></th>
+
+    </tr>
+    <!--    <tr class = "rowOnActivationTable" style="background-color:wheat">
+        </tr>-->
+</table>
+<h3>Items In Order In store</h3>
+<table id="itemsOrd">
+    <colgroup>
+        <col span="9" class="cols" style="font-style: italic" width="7%" height="5px" border="5">
+    </colgroup> <!-- columns of the table -->
+    <tr>
+        <th> <h5>idOfItem</h5></th>
+        <th> <h5>nameOfItem</h5> </th>
+        <th><h5>howBuyItem</h5></th>
+        <th> <h5>StoreThatSolditemr</h5> </th>
+        <th> <h5>CountItemInStore</h5></th>
+        <th> <h5>priceUnitInStore</h5></th>
+        <th> <h5>SumPriceItemInStore</h5></th>
+        <th> <h5>DoSoldOffer</h5></th>
+
+    </tr>
+    <!--    <tr class = "rowOnActivationTable" style="background-color:wheat">
+        </tr>-->
+</table>
+<br>
+<br>
+<ol class="ListForWatchFeedbackOfRide">
+    <textarea readonly id="TextWatchNewsOrders" name="TextWatchNews" placeholder="There are currently not any notifications" rows="7" cols="50"></textarea>
+</ol>
+
+<form method="GET"action="ClickbackoptionsManeger">
+    <button>back</button>
+</form>
+
+</body>
+</html>

@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="489.0" prefWidth="682.0" xmlns="http://javafx.com/javafx/8.0.201" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ShowDataInStores.ControllerDataInStores">
+   <children>
+      <ScrollPane layoutX="127.0" layoutY="103.0" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" minHeight="300.0" minWidth="300.0" prefHeight="300.0" prefWidth="450.0">
+         <content>
+            <TableView fx:id="TableStores" prefHeight="315.0" prefWidth="474.0">
+              <columns>
+                <TableColumn fx:id="id" prefWidth="114.0" text="idNameStore" />
+                <TableColumn fx:id="name" prefWidth="97.0" text="nameStore" />
+                  <TableColumn fx:id="ppk" prefWidth="114.0" text="PPKStore" />
+                  <TableColumn fx:id="sumsend" prefWidth="148.0" text="SumSending" />
+              </columns>
+            </TableView>
+         </content>
+      </ScrollPane>
+   </children>
+</AnchorPane>

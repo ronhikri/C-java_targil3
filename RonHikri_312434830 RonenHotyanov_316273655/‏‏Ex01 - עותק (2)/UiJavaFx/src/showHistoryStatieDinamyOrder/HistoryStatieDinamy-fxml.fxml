@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8.0.201" xmlns:fx="http://javafx.com/fxml/1" fx:controller="showHistoryStatieDinamyOrder.ControlHistoryStaDin">
+   <children>
+      <VBox layoutX="179.0" layoutY="21.0" prefHeight="363.0" prefWidth="163.0" spacing="100.0">
+         <children>
+            <Button fx:id="staticorderlist" mnemonicParsing="false" onAction="#clickStaticOrders" prefHeight="58.0" prefWidth="162.0" text="HistoryStaticOrder" />
+            <Button fx:id="DinamyOrders" mnemonicParsing="false" onAction="#clickDinamyOrders" prefHeight="63.0" prefWidth="163.0" text="HistoryDinamyOrder" />
+         </children>
+      </VBox>
+   </children>
+</AnchorPane>

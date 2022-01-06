@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="468.0" prefWidth="710.0" xmlns="http://javafx.com/javafx/8.0.201" xmlns:fx="http://javafx.com/fxml/1" fx:controller="dataStoreMap.ControllerMapStore">
+   <children>
+      <VBox layoutX="195.0" layoutY="34.0" prefHeight="427.0" prefWidth="222.0" spacing="75.0">
+         <children>
+            <TextField fx:id="id" />
+            <TextField fx:id="name" />
+            <TextField fx:id="ppk" />
+            <TextField fx:id="sumOrders" />
+         </children>
+      </VBox>
+      <Label layoutX="70.0" layoutY="34.0" prefHeight="17.0" prefWidth="153.0" text="The Id Of Store" />
+      <Label layoutX="52.0" layoutY="139.0" prefHeight="17.0" prefWidth="110.0" text="The Name Of Store" />
+      <Label layoutX="57.0" layoutY="234.0" prefHeight="17.0" prefWidth="101.0" text="The PPK Of Store" />
+      <Label layoutX="8.0" layoutY="340.0" prefHeight="17.0" prefWidth="171.0" text="The sum of Orders in this store" />
+      <TextField fx:id="TheCordinatot" layoutX="195.0" layoutY="422.0" prefHeight="25.0" prefWidth="222.0" />
+      <Label layoutX="32.0" layoutY="426.0" prefHeight="17.0" prefWidth="181.0" text="The Location Of Store" />
+   </children>
+</AnchorPane>

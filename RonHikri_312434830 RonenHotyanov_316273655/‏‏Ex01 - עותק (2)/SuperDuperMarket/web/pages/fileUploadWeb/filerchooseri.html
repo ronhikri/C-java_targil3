@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title></title>
+    <script src="../../common/context-path-helper.js"></script>
+    <script type="text/javascript" src="../../common/jquery-2.0.3.min.js"></script>
+    <script type="text/javascript" src="../../pages/fileUploadWeb/FileUploadScript.js"></script>
+    <script type="text/javascript" src="../../pages/fileUploadWeb/DataOfItemsStoresPlace.js"></script>
+    <script type="text/javascript" src="../../pages/fileUploadWeb/fillCpmboxZones.js"></script>
+    <script type="text/javascript" src="../../pages/fileUploadWeb/fillTablesUsers.js"></script>
+    <script type="text/javascript" src="../../pages/fileUploadWeb/chatRoom.js"></script>
+    <script type="text/javascript" language="javascript">
+    </script>
+
+</head>
+<body>
+<h3>Select a File:</h3>
+
+
+<form id="uploadForm" action="uploadJquery" enctype="multipart/form-data" method="POST">
+    Enter file:
+    <input type="file" name="file1" id="fileToLoad"><br>
+    <input type="Submit" value="Upload File"><br>
+</form>
+    <div id="result">
+    </div>
+<h3>Users in system</h3>
+<table id="dataUsers">
+    <colgroup>
+        <col span="7" class="cols" style="font-style: italic" width="7%" height="5px" border="5">
+    </colgroup> <!-- columns of the table -->
+    <tr>
+        <th>nameOfUser</th>
+        <th>roleOfUser</th>
+    </tr>
+</table>
+
+    <h2>Zones in system</h2>
+    <table id="dataSpace">
+        <colgroup>
+            <col span="7" class="cols" style="font-style: italic" width="7%" height="5px" border="5">
+        </colgroup> <!-- columns of the table -->
+        <tr>
+            <th>nameStoreManager</th>
+            <th>NameSpace</th>
+            <th> SumSortItems</th>
+            <th>SumStores</th>
+            <th>SumOrders</th>
+            <th>AvgpriceOfOrder</th>
+        </tr>
+        <!--    <tr class = "rowOnActivationTable" style="background-color:wheat">
+            </tr> -->
+    </table>
+<h3>Choose a zone:</h3>
+<br>
+<br>
+
+
+
+<form method="GET"action="ClickContinue">
+    <select id="Zones" name="zonin" required>
+        <option>
+        </option>
+    </select><br>
+        <button>Continue</button>
+    </form>
+<br>
+<br>
+<div class="container-fluid chatWindow">
+    <div class="row">
+        <div class="col-xs-1">
+            <div class="sidebar">
+                <h4>Online</h4>
+                <div class="clearfix">
+                    <div class="input">
+                        <ul id="userslist">
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-xs-4">
+            <div class="content">
+                <div id="chatwindow">
+                    <h4>Chat</h4>
+                    <div id="chatarea" class="span6"></div>
+                    <form id="chatform" method="POST" action="sendChat">
+                        <input type="text" id="userstring" name="userstring"/>
+                        <input type="submit" class="btn" value="Send"/>
+                    </form>
+                </div>
+            </div>
+
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-xs-1">
+            <div class="button">
+            </div>
+        </div>
+    </div>
+</div>
+
+
+</body>
+</html>

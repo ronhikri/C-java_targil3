@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/html" xmlns="http://www.w3.org/1999/html" xmlns="http://www.w3.org/1999/html"
+      xmlns="http://www.w3.org/1999/html" xmlns="http://www.w3.org/1999/html">
+<head>
+    <script src="../../common/context-path-helper.js"></script>
+    <script type="text/javascript" src="../../common/jquery-2.0.3.min.js"></script>
+    <script type="text/javascript" src="../../pages/storesInZone/createItemsInSystem.js"></script>
+    <script type="text/javascript" src="../../pages/storesInZone/updatecomboxstores.js"></script>
+    <script type="text/javascript" src="../../pages/storesInZone/itemInStoreData.js"></script>
+
+</head>
+<body>
+
+<h2>show stores and items<br>
+</h2>
+<br>
+
+
+
+<h3>Choose a store:
+
+
+        <select id="stores">
+            <option>
+            </option>
+        </select><br>
+</h3>
+<button id="DataOfStore">ShowDataOfStoreThatSelected</button>
+<br>
+<h2>dataOfStoreThatSelect
+</h2>
+<table id="dataOneStore">
+    <colgroup>
+        <col span="8" class="cols" style="font-style: italic" width="7%" height="5px" border="5">
+    </colgroup> <!-- columns of the table -->
+    <tr>
+
+        <th>IdStore</th>
+        <th>nameStore</th>
+        <th>nameManeer</th>
+        <th>locationStore</th>
+        <th>SumOfOrders</th>
+        <th>sumcostItremssold</th>
+        <th>ppk</th>
+        <th>sumcostofordersinstore</th>
+    </tr>
+</table>
+
+        <h2>items in zone
+        </h2>
+
+
+        <table id="dataitems">
+            <colgroup>
+                <col span="7" class="cols" style="font-style: italic" width="7%" height="5px" border="5">
+            </colgroup> <!-- columns of the table -->
+            <tr>
+                <th>idItem</th>
+                <th>nameItem</th>
+                <th>howBuyItem</th>
+                <th>sumstoressold</th>
+                <th>avgStoresSoldItemZone</th>
+                <th>countitemsThatSoldInZone</th>
+            </tr>
+        </table>
+            <table id="itemsStore">
+                <colgroup>
+                    <col span="7" class="cols" style="font-style: italic" width="7%" height="5px" border="5">
+                </colgroup> <!-- columns of the table -->
+                <h2>items in Store
+                </h2>
+                    <tr>
+                        <th>iditem</th>
+                        <th>nameitem</th>
+                        <th>howBuyitem</th>
+                        <th>costPriceUnitItem</th>
+                        <th>sumItemsSoldInStore</th>
+                    </tr>
+
+            </table>
+<form method="GET"action="clickContinue">
+    <button>Continue</button>
+</form>
+
+<br>
+<br>
+<form method="GET"action="clickBackToFileChooser">
+    <button>back</button>
+</form>
+
+</body>
+</html>

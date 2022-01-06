@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="405.0" prefWidth="665.0" xmlns="http://javafx.com/javafx/8.0.201" xmlns:fx="http://javafx.com/fxml/1" fx:controller="DataStoreHistoryOrder.controllershowStoresHistoryDinamy">
+   <children>
+      <ComboBox fx:id="DinamyOrders" layoutX="31.0" layoutY="35.0" onAction="#clickDinamyOrders" prefWidth="150.0" promptText="selectDinamyOrder" />
+      <ScrollPane layoutX="21.0" layoutY="116.0" minHeight="150.0" minWidth="150.0" prefHeight="259.0" prefWidth="568.0">
+         <content>
+            <TableView fx:id="TableDataStore" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" minHeight="150.0" minWidth="150.0" prefHeight="257.0" prefWidth="570.0">
+              <columns>
+                <TableColumn fx:id="Id" prefWidth="75.0" text="idStore" />
+                <TableColumn fx:id="name" prefWidth="75.0" text="nameStore" />
+                  <TableColumn fx:id="PPK" prefWidth="114.0" text="ppkStore" />
+                  <TableColumn fx:id="Distance" prefWidth="148.0" text="DistanceFromCustomer" />
+                  <TableColumn fx:id="costSending" prefWidth="140.0" text="CodtSending" />
+              </columns>
+            </TableView>
+         </content>
+      </ScrollPane>
+      <Button fx:id="selectContinue" layoutX="404.0" layoutY="35.0" mnemonicParsing="false" onAction="#ClickContinue" prefHeight="25.0" prefWidth="109.0" text="Continue" />
+   </children>
+</AnchorPane>

@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<button lang="en" xmlns="http://www.w3.org/1999/html" xmlns="http://www.w3.org/1999/html">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <title></title>
+    <script src="../../common/context-path-helper.js"></script>
+    <script type="text/javascript" src="../../common/jquery-2.0.3.min.js"></script>
+    <script type="text/javascript" src="../../pages/CustomerOptions/initiallProcessOrder.js"></script>
+    <script type="text/javascript" src="../../pages/CustomerOptions/dateAndLocation.js"></script>
+    <script type="text/javascript" src="../../pages/CustomerOptions/ShowDataOfStores.js"></script>
+    <script type="text/javascript" src="../../pages/CustomerOptions/SeslectStoreOrder.js"></script>
+    <script type="text/javascript" src="../../pages/CustomerOptions/itemsShow.js"></script>
+    <script type="text/javascript" src="../../pages/CustomerOptions/SelectItemToOrder.js"></script>
+    <script type="text/javascript" src="../../pages/CustomerOptions/EndOrderItem.js"></script>
+    <script type="text/javascript" src="../../pages/CustomerOptions/ShowDiscountIInSystem.js"></script>
+    <script type="text/javascript" src="../../pages/CustomerOptions/SelectDiscToOrd.js"></script>
+    <script type="text/javascript" src="../../pages/CustomerOptions/ShowOffersAndOpp.js"></script>
+    <script type="text/javascript" src="../../pages/CustomerOptions/AddDiscountInOrder"></script>
+    <script type="text/javascript" src="../../pages/CustomerOptions/finishToDiscountOrder.js"></script>
+    <script type="text/javascript" src="../../pages/CustomerOptions/YesOrdrerPlease.js"></script>
+    <script type="text/javascript" src="../../pages/CustomerOptions/ShowStoresOfItemsInOrders.js"></script>
+    <script type="text/javascript" src="../../pages/CustomerOptions/feedbacktoStore.js"></script>
+    <script type="text/javascript" src="../../pages/CustomerOptions/finishFeedBack.js"></script>
+
+
+    <script type="text/javascript" language="javascript">
+    </script>
+</head>
+
+
+
+    <h3>Make An Order</h3>
+    <br>
+    <br>
+
+
+    <button id="btnMakeAnOrder"  class="btn"/>Select Location And Date</button>
+    <input id="radioStatic" type="radio"  name="StaticOrDynamic" value="Static">
+    <label id="labelDeparture" for="radioStatic">Static Order</label>
+    <input id="radioDynamic" type="radio"  name="StaticOrDynamic" value="Dynamic">
+    <label id="labelArrival" for="radioDynamic">Dynamic Order</label>
+    <br>
+    <br>
+    <label>Years:</label>
+    <select class="combo" id="comboYears">
+        <option value="Select">Select year</option>
+        <option value="2000">2000</option>
+        <option value="2001">2001</option>
+        <option value="2002">2002</option>
+        <option value="2003">2003</option>
+        <option value="2004">2004</option>
+        <option value="2005">2005</option>
+        <option value="2006">2006</option>
+        <option value="2007">2007</option>
+        <option value="2008">2008</option>
+        <option value="2009">2009</option>
+        <option value="2010">2010</option>
+        <option value="2011">2011</option>
+        <option value="2012">2012</option>
+        <option value="2013">2013</option>
+        <option value="2014">2014</option>
+        <option value="2015">2015</option>
+        <option value="2016">2016</option>
+        <option value="2017">2017</option>
+        <option value="2018">2018</option>
+        <option value="2019">2019</option>
+        <option value="2020">2020</option>
+        <option value="2021">2021</option>
+        <option value="2022">2022</option>
+        <option value="2023">2023</option>
+    </select>
+    <label>Months:</label>
+    <select class="combo" id="comboMonth">
+        <option value="Select">Select months</option>
+        <option value="01">1</option>
+        <option value="02">2</option>
+        <option value="03">3</option>
+        <option value="04">4</option>
+        <option value="05">5</option>
+        <option value="06">6</option>
+        <option value="07">7</option>
+        <option value="08">8</option>
+        <option value="09">9</option>
+        <option value="10">10</option>
+        <option value="11">11</option>
+        <option value="12">12</option>
+    </select>
+    <label>days:</label>
+    <select class="combo" id="comboDay">
+        <option value="Select">Select days</option>
+        <option value="01">1</option>
+        <option value="02">2</option>
+        <option value="03">3</option>
+        <option value="04">4</option>
+        <option value="04">5</option>
+        <option value="06">6</option>
+        <option value="07">7</option>
+        <option value="08">8</option>
+        <option value="09">9</option>
+        <option value="10">10</option>
+        <option value="11">11</option>
+        <option value="12">12</option>
+        <option value="13">13</option>
+        <option value="14">14</option>
+        <option value="15">15</option>
+        <option value="16">16</option>
+        <option value="17">17</option>
+        <option value="18">18</option>
+        <option value="19">19</option>
+        <option value="20">20</option>
+        <option value="21">21</option>
+        <option value="22">22</option>
+        <option value="23">23</option>
+        <option value="24">24</option>
+        <option value="25">25</option>
+        <option value="26">26</option>
+        <option value="27">27</option>
+        <option value="28">28</option>
+        <option value="29">29</option>
+        <option value="30">30</option>
+        <option value="31">31</option>
+    </select>
+    <br>
+    <label>spaceX:</label>
+    <input type="text" placeholder="CordinataX" id="Cordinatax">
+    <label>spaceY:</label>
+    <input type="text" placeholder="CordinataY" id="Cordinatay">
+    <br>
+<h5 id="errorMessageToDateAndLocation"></h5>
+
+<br>
+<br>
+    <h3>seletStoreAndItem</h3>
+    <br>
+    <button id="finishToSelectItem" class="btn">FinishAddItem</button>
+    <button id="AddItemToOrder" class="btn">AddItem</button>
+    <button id="bthDataOfItem" class="bth"/>DataItems</button>
+    <button id="bthAddStore" class="btn"/>AddStoreToOrder</button>
+    <button id="btnDataOfStore"  class="btn"/>DataOfStore</button>
+<label>Enter_Amount_Item:</label>
+<input type="text" placeholder="0" id="Enteramount">
+    <br>
+    <h3>Choose a store:</h3>
+    <select id="idStoress" name="Stores">
+        <option>
+        </option>
+    </select><br>
+    <h3>Choose a item:</h3>
+    <select id="idItem"name="items"required>
+        <option>
+        </option>
+    </select><br>
+<h3>Data Of Stores:</h3>
+        <table id="ss">
+            <colgroup>
+                <col span="9" class="cols" style="font-style: italic" width="7%" height="5px" border="5">
+            </colgroup> <!-- columns of the table -->
+            <tr>
+                <th> <h5>TheidOfStore</h5></th>
+                <th> <h5>ThenameStore</h5> </th>
+                <th> <h5>Thespacex</h5> </th>
+                <th> <h5>Thespacey</h5></th>
+                <th> <h5>TheDistance</h5> </th>
+                <th> <h5>TheppkStore</h5> </th>
+                <th> <h5>ThecostSending</h5></th>
+                <th> <h5>ThesumKindsItems</h5> </th>
+                <th> <h5>ThesumPrices</h5> </th>
+
+            </tr>
+            <!--    <tr class = "rowOnActivationTable" style="background-color:wheat">
+                </tr>-->
+        </table>
+<br>
+<h3>Data Of Items</h3>
+    <table id="tt">
+        <colgroup>
+            <col span="8" class="cols" style="font-style: italic" width="7%" height="5px" border="5">
+        </colgroup> <!-- columns of the table -->
+        <tr>
+            <th> <h5>idItem</h5></th>
+            <th> <h5>idStoreOfItem</h5> </th>
+            <th> <h5>nameOfStoreOfItem</h5> </th>
+            <th> <h5>nameOfItem</h5></th>
+            <th> <h5>TheWayBuyItem</h5> </th>
+            <th> <h5>PriceUnitTheItem</h5> </th>
+        </tr>
+        <!--    <tr class = "rowOnActivationTable" style="background-color:wheat">
+            </tr>-->
+    </table>
+<br>
+<br>
+<br>
+<button id="ShowDiscounts" class="btn">Show Discounts</button>
+<button id="adddiscount" class="btn">Add Discount</button>
+<button id="Showoffers" class="bth"/>Show Offrs AndO peration</button>
+<button id="addDisc" class="btn"/>Add Discount To Order</button>
+<button id="finishDiscount"  class="btn"/>Finish To Order Discount</button>
+<br>
+<select id="namedis" name="discountOrder" required>
+    <option>
+    </option>
+</select><br>
+<select id="name_opperation" name="operationOrder" required>
+    <option>
+    </option>
+</select><br>
+<br>
+<select id="name_offers" name="offersOrder" required>
+    <option>
+    </option>
+</select><br>
+<h3>Data Of Discounts</h3>
+<table id="DataDiscount">
+    <colgroup>
+        <col span="5" class="cols" style="font-style: italic" width="7%" height="5px" border="5">
+    </colgroup> <!-- columns of the table -->
+    <tr>
+        <th> <h5>nameDiscount</h5></th>
+        <th> <h5>idOfItemDiscount</h5> </th>
+        <th><h5>nameSellOfDiscount</h5></th>
+        <th> <h5>QuantityofDiscount</h5> </th>
+        <th> <h5>opperatorOfDiscount</h5></th>
+
+    </tr>
+    <!--    <tr class = "rowOnActivationTable" style="background-color:wheat">
+        </tr>-->
+</table>
+<br>
+<br>
+<h3>Data Of Discounts</h3>
+<br>
+<table id="DataOffetsOfDiscount">
+    <colgroup>
+        <col span="4" class="cols" style="font-style: italic" width="7%" height="5px" border="5">
+    </colgroup> <!-- columns of the table -->
+    <tr>
+        <th> <h5>IdofOffer</h5></th>
+        <th> <h5>NmaeOfOffer</h5> </th>
+        <th> <h5>QuantityOfOffer</h5> </th>
+        <th> <h5>ForAdditionalOffer</h5></th>
+
+    </tr>
+    <!--    <tr class = "rowOnActivationTable" style="background-color:wheat">
+        </tr>-->
+</table>
+<br>
+<br>
+<button id="Yes" class="btn">ApproveOrder</button>
+<button id="No" class="btn">CancelOrder</button>
+<br>
+<br>
+<button id="ShowStoresOrder"  class="btn"/>Show Stores You Select In Order</button>
+<button id="sendfidback" class="btn"/>send feed back</button>
+<button id="finishfeedback" class="btn"/>finish make Feedback</button>
+<br>
+<select id="StoresInOrder" name="Storesinorder">
+    <option>
+    </option>
+</select><br>
+<h4>Please choose the rank you want to rate the storeManeger:</h4>
+<input  type="radio" id="rate1" name="Rate" class="Rate" value="1">
+<label id="labelRate1" for="rate1">1</label>
+<input  type="radio" id="rate2" name="Rate" class="Rate" value="2">
+<label id="labelRate2" for="rate2">2</label>
+<input  type="radio" id="rate3" name="Rate" class="Rate" value="3">
+<label id="labelRate3" for="rate3">3</label>
+<input  type="radio" id="rate4" name="Rate" class="Rate" value="4">
+<label id="labelRate4" for="rate4">4</label>
+<input  type="radio" id="rate5" name="Rate"class="Rate"  value="5">
+<label id="labelRate5" for="rate5">5</label>
+<h4>Write your feedback here:</h4>
+<textarea id="textAreaFeedback" placeholder="Write feedback for the Store Manager here (not more than 300 letters)"></textarea>
+<br>
+<h5 id="errorMessageFeedback"></h5>
+<form method="GET"action="ClickShowOrders">
+    <button>Back</button>
+</form>
+</body>
+</html>

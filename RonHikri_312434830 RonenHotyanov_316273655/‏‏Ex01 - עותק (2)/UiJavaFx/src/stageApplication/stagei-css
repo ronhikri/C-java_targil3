@@ -1,0 +1,46 @@
+#ShoCust{
+    -fx-background-color:yellow;
+}
+#ShowI{
+    -fx-background-color: orange;
+}
+#ShowS
+{
+    -fx-background-color: #00ff5d;
+}
+#UpdateI
+{
+    -fx-background-color: #00ffb7;
+}
+#MakeOrd
+{
+    -fx-background-color: #ff3c00;
+}
+#MapSandC
+{
+    -fx-background-color: #00b7ff;
+}
+#HistoryOrd
+{
+    -fx-background-color: #00ff55;
+}
+#AddS
+{
+    -fx-background-color: #00ffcc;
+}
+#AddIS
+{
+    -fx-background-color: gray;
+}
+#AddD
+{
+    -fx-background-color: brown;
+}
+#ClickLoadXmlFile
+{
+    -fx-background-color: white;
+}
+#Manage
+{
+    -fx-background-color: #e600ff;
+}
